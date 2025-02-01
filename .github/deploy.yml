@@ -1,0 +1,50 @@
+name: Deploy VitePress to Server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+steps:
+- name: Checkout code
+  uses: actions/checkout@v4
+
+- name: Set up Node.js
+  uses: actions/setup-node@v4
+  with:
+    node-version: '22'
+
+- name: Cache Node.js modules
+  uses: actions/cache@v4
+  with:
+    path: node_modules
+    key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+    restore-keys: |
+      ${{ runner.os }}-node-
+
+- name: Install dependencies
+  run: npm install
+
+- name: Build VitePress
+  run: npm run docs:build
+
+- name: Install SSH dependencies
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y openssh-client rsync
+
+- name: Configure SSH
+  run: |
+    mkdir -p ~/.ssh
+    echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+    chmod 600 ~/.ssh/id_ed25519
+    ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+- name: Deploy to Server
+  run: |
+    rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" docs/.vitepress/dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/opt/1panel/apps/openresty/openresty/www/sites/remember11.com
