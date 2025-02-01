@@ -1,0 +1,7 @@
+docs/.vitepress/cache
+docs/.vitepress/dist
+dist
+node_modules
+yarn.lock
+pnpm-lock.yaml
+.vercel
