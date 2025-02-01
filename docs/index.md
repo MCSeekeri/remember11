@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "首页"
-  text: "Remember11 中文站"
+  text: "新·Remember11 中文站（Beta）"
   tagline: 资源，解密，这里什么都有
   image:
     src: /images/hero.webp
