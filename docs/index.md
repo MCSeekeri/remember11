@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "首页"
-  text: "新·Remember11 中文站（Beta）"
-  tagline: 资源，解密，这里什么都有
+  name: "完全重构："
+  text: "R11 中文站 2.0"
+  tagline: 一站式的《Remember11》体验导航
   image:
     src: /images/hero.webp
   actions:
