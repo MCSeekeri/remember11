@@ -123,8 +123,8 @@ export default defineConfig({
           {
             text: "游戏解包",
             items: [
-			        { text: "全CG解包", link: "/resource/全CG解包" },
-			        { text: "全文本解包", link: "/resource/全文本解包"  },
+			        { text: "全CG解包", link: "/resource/游戏解包/全CG解包" },
+			        { text: "全文本解包", link: "/resource/游戏解包/全文本解包"  },
             ],
           },
         ],
@@ -255,8 +255,8 @@ export default defineConfig({
           {
             text: "游戏解包",
             items: [
-			        { text: "全CG解包", link: "/resource/全CG解包" },
-			        { text: "全文本解包", link: "/resource/全文本解包"  },
+			        { text: "全CG解包", link: "/resource/游戏解包/全CG解包" },
+			        { text: "全文本解包", link: "/resource/游戏解包/全文本解包"  },
             ],
           },
         ],
