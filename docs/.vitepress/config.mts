@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "新·Remember11 中文站（Beta）",
-  description: "Remember11非官方中文站点",
+  title: "Remember11 中文专题站",
+  description: "一站式的《Remember11》体验导航",
   lang: "zh-CN",
   head: [["link", { rel: "icon", href: "/images/icon.ico" }]],
   cleanUrls: true,
@@ -84,6 +84,49 @@ export default defineConfig({
             ],
           },
 		    { text: "结语", link: "/posts/结语" },
+        ],
+      },
+      {
+        text: "游戏资料",
+        items: [
+          { text: "概述", link: "/data/概述" },
+          {
+            text: "游戏攻略",
+            items: [
+			        { text: "快速通关攻略", link: "/data/游戏攻略/快速通关攻略" },
+			        { text: "全Tips收集攻略", link: "/data/游戏攻略/全Tips收集攻略"  },
+              { text: "详细解析攻略", link: "/data/游戏攻略/详细解析攻略" },
+            ],
+          },
+          {
+            text: "剧情资料",
+            items: [
+			        { text: "全Tips一览", link: "/data/剧情资料/全Tips一览" },
+			        { text: "游戏年表", link: "/data/剧情资料/游戏年表"  },
+              { text: "广播剧系列", link: "/data/剧情资料/广播剧系列" },
+            ],
+          },
+          {
+            text: "相关采访",
+            items: [
+			        { text: "(2004)Message From 声优口白系列", link: "/data/相关采访/(2004)Message From 声优口白系列" },
+			        { text: "(2020)MAGES同前KID员工进行的特别访谈", link: "/data/相关采访/(2020)MAGES同前KID员工进行的特别访谈"  },
+            ],
+          },
+        ],
+      },
+	  {
+        text: "游戏资源",
+        items: [
+          { text: "概述", link: "/resource/概述" },
+          { text: "本体资源", link: "/resource/游戏资源" },
+          {
+            text: "游戏解包",
+            items: [
+			        { text: "全CG解包", link: "/resource/全CG解包" },
+			        { text: "全文本解包", link: "/resource/全文本解包"  },
+            ],
+          },
         ],
       },
       { text: "更新日志及留言板", link: "/keyboardWar/更新日志及留言板" },
@@ -172,6 +215,54 @@ export default defineConfig({
           ],
         },
       ],
+      "/data/": [
+        {
+        text: "游戏资料",
+          items: [
+            { text: "概述", link: "/data/概述" },
+            {
+              text: "游戏攻略",
+              items: [
+                { text: "快速通关攻略", link: "/data/游戏攻略/快速通关攻略" },
+                { text: "全Tips收集攻略", link: "/data/游戏攻略/全Tips收集攻略"  },
+                { text: "详细解析攻略", link: "/data/游戏攻略/详细解析攻略" },
+              ],
+            },
+            {
+              text: "剧情资料",
+              items: [
+                { text: "全Tips一览", link: "/data/剧情资料/全Tips一览" },
+                { text: "游戏年表", link: "/data/剧情资料/游戏年表"  },
+                { text: "广播剧系列", link: "/data/剧情资料/广播剧系列" },
+              ],
+            },
+            {
+              text: "相关采访",
+              items: [
+                { text: "(2004)Message From 声优口白系列", link: "/data/相关采访/(2004)Message From 声优口白系列" },
+                { text: "(2020)MAGES同前KID员工进行的特别访谈", link: "/data/相关采访/(2020)MAGES同前KID员工进行的特别访谈"  },
+              ],
+            },
+			],
+        }
+      ],
+	  "/resource/": [
+      {
+        text: "游戏资源",
+        items: [
+          { text: "概述", link: "/resource/概述" },
+          { text: "本体资源", link: "/resource/游戏资源" },
+          {
+            text: "游戏解包",
+            items: [
+			        { text: "全CG解包", link: "/resource/全CG解包" },
+			        { text: "全文本解包", link: "/resource/全文本解包"  },
+            ],
+          },
+        ],
+      },
+      ],
+      },
     },
 
     editLink: {
@@ -209,4 +300,4 @@ export default defineConfig({
     darkModeSwitchTitle: "切换到深色模式",
     skipToContentLabel: "跳转到内容",
   },
-});
+);

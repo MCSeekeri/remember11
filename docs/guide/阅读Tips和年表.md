@@ -16,8 +16,8 @@
 
 以下是您可以看到它们的全部方式：
 
-- 自行收集每一行带有 Tips 的台词，可以使用[全 TIPS 攻略](/resource/游戏攻略/全Tips收集攻略）
-- [在线阅读](/resource/剧情资料/全Tips一览)
+- 自行收集每一行带有 Tips 的台词，可以使用[全 TIPS 攻略](/data/游戏攻略/全Tips收集攻略）
+- [在线阅读](/data/剧情资料/全Tips一览)
 - 使用全存档文件后在游戏内查看。
   - PC 版
     - [贴吧下载](https://tieba.baidu.com/p/6203540645) [The Cutting Room Floor](<https://tcrf.net/Notes:Remember_11:_The_Age_of_Infinity_(Windows)>)
@@ -29,7 +29,7 @@
 请注意，`年表`为 PSP 版游戏的追加内容，PC 版和 PS2 版并不拥有。以下是您可以看到它们的全部方式：
 
 - 在 PSP 版游戏中自行收集全部 Tips ，年表中关于《Remember11》的部分将会自动解锁。
-- [在线阅读](/resource/剧情资料/游戏年表)
+- [在线阅读](/data/剧情资料/游戏年表)
 - 使用 [PSP 版 100%存档文件](#阅读全部-tips)后在 PSP 版游戏中查看。
 
 :::tip
