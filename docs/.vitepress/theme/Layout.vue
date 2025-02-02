@@ -14,5 +14,12 @@ const { Layout } = DefaultTheme;
       </div>
       <Waline />
     </template>
+    <template #layout-bottom>
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <a href="https://beian.miit.gov.cn/" style="margin-right: 10px;">鲁ICP备2021039368号</a>
+        <img src="https://www.beian.gov.cn/img/new/gongan.png" alt="公安徽章" style="margin-right: 10px;">
+        <a href="https://www.beian.gov.cn/portal/registerSystemInfo">37160202000626</a>
+      </div>
+    </template>
   </Layout>
 </template>
