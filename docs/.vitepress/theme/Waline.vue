@@ -5,14 +5,14 @@
 </template>
 <script setup>
 import { Waline } from '@waline/client/component';
-import { computed } from 'vue';
+import { useRoute } from 'vitepress'
 
 import '@waline/client/style';
 
 const serverURL = "https://r11.comments.mcseekeri.com";
 const dark = 'html.dark';
 const turnstileKey = "0x4AAAAAAAgSnJC0FwcTFI6c";
-const path = computed(() => window.location.path);
+const { path } = useRoute()
 </script>
 
 <style>
