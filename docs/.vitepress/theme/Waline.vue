@@ -13,6 +13,7 @@ import '@waline/client/style';
 const serverURL = "https://r11.comments.mcseekeri.com";
 const dark = 'html.dark';
 const turnstileKey = "0x4AAAAAAAgSnJC0FwcTFI6c";
+const path = computed(() => useRoute().path)
 </script>
 
 <style>
