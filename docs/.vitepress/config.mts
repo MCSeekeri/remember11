@@ -179,10 +179,10 @@ export default defineConfig({
       text: "在 GitHub 上编辑此页面",
     },
 
-    footer: {
-      message:
-        '<a href="https://beian.miit.gov.cn/">鲁ICP备2021039368号</a><img src="https://www.beian.gov.cn/img/new/gongan.png" alt="公安徽章" style="display: inline;"><a href="https://www.beian.gov.cn/portal/registerSystemInfo">37160202000626</a>',
-    },
+    // footer: {
+    //   message:
+    //     '<a href="https://beian.miit.gov.cn/">鲁ICP备2021039368号</a><img src="https://www.beian.gov.cn/img/new/gongan.png" alt="公安徽章" style="display: inline;"><a href="https://www.beian.gov.cn/portal/registerSystemInfo">37160202000626</a>',
+    // },
 
     docFooter: {
       prev: "上一页",
