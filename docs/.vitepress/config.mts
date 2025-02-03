@@ -6,6 +6,9 @@ export default defineConfig({
   lang: "zh-CN",
   head: [["link", { rel: "icon", href: "/images/icon.ico" }]],
   cleanUrls: true,
+  sitemap: {
+    hostname: "https://remember11.com",
+  },
 
   themeConfig: {
     logo: "/images/icon.ico",
@@ -77,13 +80,16 @@ export default defineConfig({
           {
             text: "其他细节",
             items: [
-              { text: "钟楼上的影子与Self不存在论", link: "/posts/其他细节/钟楼上的影子与Self不存在论" },
-			  { text: "悠尼计划", link: "/posts/其他细节/悠尼计划" },
-			  { text: "内海计划", link: "/posts/其他细节/内海计划" },
-			  { text: "其他琐碎问题", link: "/posts/其他细节/其他琐碎问题" },
+              {
+                text: "钟楼上的影子与Self不存在论",
+                link: "/posts/其他细节/钟楼上的影子与Self不存在论",
+              },
+              { text: "悠尼计划", link: "/posts/其他细节/悠尼计划" },
+              { text: "内海计划", link: "/posts/其他细节/内海计划" },
+              { text: "其他琐碎问题", link: "/posts/其他细节/其他琐碎问题" },
             ],
           },
-		    { text: "结语", link: "/posts/结语" },
+          { text: "结语", link: "/posts/结语" },
         ],
       },
       {
@@ -93,29 +99,35 @@ export default defineConfig({
           {
             text: "游戏攻略",
             items: [
-			        { text: "快速通关攻略", link: "/data/游戏攻略/快速通关攻略" },
-			        { text: "全Tips收集攻略", link: "/data/游戏攻略/全Tips收集攻略"  },
+              { text: "快速通关攻略", link: "/data/游戏攻略/快速通关攻略" },
+              { text: "全Tips收集攻略", link: "/data/游戏攻略/全Tips收集攻略" },
               { text: "详细解析攻略", link: "/data/游戏攻略/详细解析攻略" },
             ],
           },
           {
             text: "剧情资料",
             items: [
-			        { text: "全Tips一览", link: "/data/剧情资料/全Tips一览" },
-			        { text: "游戏年表", link: "/data/剧情资料/游戏年表"  },
+              { text: "全Tips一览", link: "/data/剧情资料/全Tips一览" },
+              { text: "游戏年表", link: "/data/剧情资料/游戏年表" },
               { text: "广播剧系列", link: "/data/剧情资料/广播剧系列" },
             ],
           },
           {
             text: "相关采访",
             items: [
-			        { text: "(2004)Message From 声优口白系列", link: "/data/相关采访/(2004)Message From 声优口白系列" },
-			        { text: "(2020)MAGES同前KID员工进行的特别访谈", link: "/data/相关采访/(2020)MAGES同前KID员工进行的特别访谈"  },
+              {
+                text: "(2004)Message From 声优口白系列",
+                link: "/data/相关采访/(2004)Message From 声优口白系列",
+              },
+              {
+                text: "(2020)MAGES同前KID员工进行的特别访谈",
+                link: "/data/相关采访/(2020)MAGES同前KID员工进行的特别访谈",
+              },
             ],
           },
         ],
       },
-	  {
+      {
         text: "游戏资源",
         items: [
           { text: "概述", link: "/resource/概述" },
@@ -123,11 +135,11 @@ export default defineConfig({
           {
             text: "游戏解包",
             items: [
-			        { text: "全CG解包", link: "/resource/游戏解包/全CG解包" },
-			        { text: "全文本解包", link: "/resource/游戏解包/全文本解包"  },
+              { text: "全CG解包", link: "/resource/游戏解包/全CG解包" },
+              { text: "全文本解包", link: "/resource/游戏解包/全文本解包" },
             ],
           },
-		  { text: "游戏设定集", link: "/resource/游戏设定集" },
+          { text: "游戏设定集", link: "/resource/游戏设定集" },
         ],
       },
       { text: "更新日志及留言板", link: "/keyboardWar/更新日志及留言板" },
@@ -207,26 +219,32 @@ export default defineConfig({
             {
               text: "其他细节",
               items: [
-                { text: "钟楼上的影子与Self不存在论", link: "/posts/其他细节/钟楼上的影子与Self不存在论" },
-				{ text: "悠尼计划", link: "/posts/其他细节/悠尼计划" },
-				{ text: "内海计划", link: "/posts/其他细节/内海计划" },
-				{ text: "其他琐碎问题", link: "/posts/其他细节/其他琐碎问题" },
+                {
+                  text: "钟楼上的影子与Self不存在论",
+                  link: "/posts/其他细节/钟楼上的影子与Self不存在论",
+                },
+                { text: "悠尼计划", link: "/posts/其他细节/悠尼计划" },
+                { text: "内海计划", link: "/posts/其他细节/内海计划" },
+                { text: "其他琐碎问题", link: "/posts/其他细节/其他琐碎问题" },
               ],
             },
-			  { text: "结语", link: "/posts/结语" },
+            { text: "结语", link: "/posts/结语" },
           ],
         },
       ],
       "/data/": [
         {
-        text: "游戏资料",
+          text: "游戏资料",
           items: [
             { text: "概述", link: "/data/概述" },
             {
               text: "游戏攻略",
               items: [
                 { text: "快速通关攻略", link: "/data/游戏攻略/快速通关攻略" },
-                { text: "全Tips收集攻略", link: "/data/游戏攻略/全Tips收集攻略"  },
+                {
+                  text: "全Tips收集攻略",
+                  link: "/data/游戏攻略/全Tips收集攻略",
+                },
                 { text: "详细解析攻略", link: "/data/游戏攻略/详细解析攻略" },
               ],
             },
@@ -234,38 +252,68 @@ export default defineConfig({
               text: "剧情资料",
               items: [
                 { text: "全Tips一览", link: "/data/剧情资料/全Tips一览" },
-                { text: "游戏年表", link: "/data/剧情资料/游戏年表"  },
+                { text: "游戏年表", link: "/data/剧情资料/游戏年表" },
                 { text: "广播剧系列", link: "/data/剧情资料/广播剧系列" },
               ],
             },
             {
               text: "相关采访",
               items: [
-                { text: "(2004)Message From 声优口白系列", link: "/data/相关采访/(2004)Message From 声优口白系列" },
-                { text: "(2020)MAGES同前KID员工进行的特别访谈", link: "/data/相关采访/(2020)MAGES同前KID员工进行的特别访谈"  },
+                {
+                  text: "(2004)Message From 声优口白系列",
+                  link: "/data/相关采访/(2004)Message From 声优口白系列",
+                },
+                {
+                  text: "(2020)MAGES同前KID员工进行的特别访谈",
+                  link: "/data/相关采访/(2020)MAGES同前KID员工进行的特别访谈",
+                },
               ],
             },
-			],
-        }
+          ],
+        },
       ],
-	  "/resource/": [
-      {
-        text: "游戏资源",
-        items: [
-          { text: "概述", link: "/resource/概述" },
-          { text: "本体资源", link: "/resource/游戏资源" },
-          {
-            text: "游戏解包",
-            items: [
-			        { text: "全CG解包", link: "/resource/游戏解包/全CG解包" },
-			        { text: "全文本解包", link: "/resource/游戏解包/全文本解包"  },
-            ],
+      "/resource/": [
+        {
+          text: "游戏资源",
+          items: [
+            { text: "概述", link: "/resource/概述" },
+            { text: "本体资源", link: "/resource/游戏资源" },
+            {
+              text: "游戏解包",
+              items: [
+                { text: "全CG解包", link: "/resource/游戏解包/全CG解包" },
+                { text: "全文本解包", link: "/resource/游戏解包/全文本解包" },
+              ],
+            },
+            { text: "游戏设定集", link: "/resource/游戏设定集" },
+          ],
+        },
+      ],
+    },
+
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: "搜索文档",
+                buttonAriaLabel: "搜索文档",
+              },
+              modal: {
+                noResultsText: "无法找到相关结果",
+                resetButtonTitle: "清除查询条件",
+                footer: {
+                  selectText: "选择",
+                  navigateText: "切换",
+                },
+              },
+            },
           },
-		  { text: "游戏设定集", link: "/resource/游戏设定集" },
-        ],
+        },
       },
-      ],
-      },
+    },
 
     editLink: {
       pattern: "https://github.com/MCSeekeri/remember11/edit/main/docs/:path",
@@ -302,5 +350,4 @@ export default defineConfig({
     darkModeSwitchTitle: "切换到深色模式",
     skipToContentLabel: "跳转到内容",
   },
-},
-);
+});
