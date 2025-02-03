@@ -77,7 +77,7 @@ export default defineConfig({
           {
             text: "其他细节",
             items: [
-              { text: "钟楼上的影子", link: "/posts/其他细节/钟楼上的影子" },
+              { text: "钟楼上的影子与Self不存在论", link: "/posts/其他细节/钟楼上的影子与Self不存在论" },
 			  { text: "悠尼计划", link: "/posts/其他细节/悠尼计划" },
 			  { text: "内海计划", link: "/posts/其他细节/内海计划" },
 			  { text: "其他琐碎问题", link: "/posts/其他细节/其他琐碎问题" },
@@ -206,7 +206,7 @@ export default defineConfig({
             {
               text: "其他细节",
               items: [
-                { text: "钟楼上的影子", link: "/posts/其他细节/钟楼上的影子" },
+                { text: "钟楼上的影子与Self不存在论", link: "/posts/其他细节/钟楼上的影子与Self不存在论" },
 				{ text: "悠尼计划", link: "/posts/其他细节/悠尼计划" },
 				{ text: "内海计划", link: "/posts/其他细节/内海计划" },
 				{ text: "其他琐碎问题", link: "/posts/其他细节/其他琐碎问题" },
