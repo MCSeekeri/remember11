@@ -263,7 +263,6 @@ export default defineConfig({
       },
       ],
       },
-    },
 
     editLink: {
       pattern: "https://github.com/MCSeekeri/remember11/edit/main/docs/:path",
@@ -300,4 +299,5 @@ export default defineConfig({
     darkModeSwitchTitle: "切换到深色模式",
     skipToContentLabel: "跳转到内容",
   },
+},
 );
