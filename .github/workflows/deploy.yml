@@ -28,15 +28,10 @@ jobs:
           ${{ runner.os }}-node-
 
     - name: Install dependencies
-      run: npm install
-
-    - name: Build VitePress
-      run: npm run docs:build
-
-    - name: Install SSH dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y openssh-client
+        sudo apt-get install -y openssh-client rsync
+        npm install
 
     - name: Configure SSH
       run: |
@@ -47,4 +42,5 @@ jobs:
 
     - name: Deploy to Server
       run: |
-        scp -P ${{ secrets.SSH_PORT }} -r docs/.vitepress/dist/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/opt/1panel/apps/openresty/openresty/www/sites/remember11.com/index/
+        npm run docs:build
+        rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" docs/.vitepress/dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/opt/1panel/apps/openresty/openresty/www/sites/remember11.com/index/
