@@ -130,6 +130,7 @@ export default defineConfig({
         ],
       },
       { text: "更新日志及留言板", link: "/keyboardWar/更新日志及留言板" },
+      { text: "回到旧版", link: "https://legacy.remember11.com/" },
     ],
 
     sidebar: {
