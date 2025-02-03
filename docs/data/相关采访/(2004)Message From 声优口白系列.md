@@ -6,17 +6,17 @@
 
 ## 子安武人（优希堂悟）
 
-![p1](/images/coverSatoru.jpg)
+![p1](/images/coverSatoru.webp)
 [bilibili](https://www.bilibili.com/video/BV1eV411J7je/)
 
 ## 森永理科（冬川心）
 
-![p2](/images/coverKokoro.jpg)
+![p2](/images/coverKokoro.webp)
 [bilibili](https://www.bilibili.com/video/BV1Do4y1275c/)
 
 ## 皆川纯子（楠田悠尼）
 
-![p3](/images/coverUni.jpg)
+![p3](/images/coverUni.webp)
 [bilibili](https://www.bilibili.com/video/BV1YB4y1F7uJ/)
 
 # 音频下载
