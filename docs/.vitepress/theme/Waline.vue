@@ -1,11 +1,13 @@
 <template>
-  <Waline
-    :key="path"
-    :serverURL="serverURL"
-    :path="path"
-    :dark="dark"
-    :turnstileKey="turnstileKey"
-  />
+  <ClientOnly>
+    <Waline
+      :key="path"
+      :serverURL="serverURL"
+      :path="path"
+      :dark="dark"
+      :turnstileKey="turnstileKey"
+    />
+  </ClientOnly>
 </template>
 <script setup>
 import { Waline } from "@waline/client/component";
