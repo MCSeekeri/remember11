@@ -53,14 +53,12 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
       <Waline />
     </template>
     <template #layout-bottom>
-      <div style="display: flex; align-items: center; justify-content: center">
-        <a href="https://beian.miit.gov.cn/" style="margin-right: 10px"
-          >鲁ICP备2021039368号</a
-        >
+      <div class="footer">
+        <a href="https://beian.miit.gov.cn/">鲁ICP备2021039368号</a>
         <img
           src="https://www.beian.gov.cn/img/new/gongan.png"
           alt="公安徽章"
-          style="margin-right: 10px"
+          width="24"
         />
         <a href="https://www.beian.gov.cn/portal/registerSystemInfo"
           >37160202000626</a
@@ -92,5 +90,14 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 .VPSwitchAppearance .check {
   transform: none !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: #666;
+  gap: 8px;
+  font-size: 14px;
+  padding: 16px;
 }
 </style>
