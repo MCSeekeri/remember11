@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://remember11.com/sitemap.xml
