@@ -45,8 +45,10 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 <template>
   <Layout>
     <template #doc-after>
-      <div style="text-align: center; margin-top: 20px; margin-bottom: 20px">
-        <h1 style="font-size: 24px">评论区可能含有剧透内容，请通关后观看。</h1>
+      <div class="danger custom-block" style="margin: 16px 0; padding: 16px">
+        <p style="font-size: 24px; text-align: center">
+          ❗评论区可能含有剧透内容，请通关后观看。
+        </p>
       </div>
       <Waline />
     </template>
