@@ -298,8 +298,7 @@ export default defineConfig({
           root: {
             translations: {
               button: {
-                buttonText: "搜索文档",
-                buttonAriaLabel: "搜索文档",
+                buttonText: "请小心搜索，谨防剧透",
               },
               modal: {
                 noResultsText: "无法找到相关结果",
@@ -307,6 +306,7 @@ export default defineConfig({
                 footer: {
                   selectText: "选择",
                   navigateText: "切换",
+                  closeText: "关闭",
                 },
               },
             },
