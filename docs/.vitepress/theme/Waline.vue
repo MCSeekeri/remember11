@@ -1,24 +1,31 @@
 <template>
-  <ClientOnly>
-    <Waline :serverURL="serverURL" :path="path" :dark="dark" :turnstileKey="turnstileKey" />
-  </ClientOnly>
+  <Waline
+    :key="path"
+    :serverURL="serverURL"
+    :path="path"
+    :dark="dark"
+    :turnstileKey="turnstileKey"
+  />
 </template>
 <script setup>
-import { Waline } from '@waline/client/component';
-import { useRoute } from 'vitepress'
+import { Waline } from "@waline/client/component";
+import { useRoute } from "vitepress";
+import { computed } from "vue";
 
-import '@waline/client/style';
+import "@waline/client/style";
 
 const serverURL = "https://r11.comments.mcseekeri.com";
-const dark = 'html.dark';
+const dark = "html.dark";
 const turnstileKey = "0x4AAAAAAAgSnJC0FwcTFI6c";
-const { path } = useRoute()
+const route = useRoute();
+
+const path = computed(() => route.path.replace(/\/$/, '') || '/');
 </script>
 
-<style>
- html.dark {
-   --waline-bg-color: #1b1b1f !important;
-   --waline-active-color: #a8b1ff !important;
-   --waline-theme-color: #a8b1ff !important;
-  }
+<style scoped>
+[data-waline] {
+  --waline-bg-color: var(--vp-c-bg);
+  --waline-theme-color: var(--vp-c-brand);
+  --waline-active-color: var(--vp-c-brand);
+}
 </style>
