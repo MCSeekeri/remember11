@@ -6,6 +6,8 @@
       :path="path"
       :dark="dark"
       :turnstileKey="turnstileKey"
+      :imageUploader="false"
+      :emoji="false"
     />
   </ClientOnly>
 </template>
@@ -21,7 +23,7 @@ const dark = "html.dark";
 const turnstileKey = "0x4AAAAAAAgSnJC0FwcTFI6c";
 const route = useRoute();
 
-const path = computed(() => route.path.replace(/\/$/, '') || '/');
+const path = computed(() => route.path.replace(/\/$/, "") || "/");
 </script>
 
 <style scoped>
