@@ -43,4 +43,4 @@ jobs:
     - name: Deploy to Server
       run: |
         npm run docs:build
-        rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" docs/.vitepress/dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/opt/1panel/apps/openresty/openresty/www/sites/remember11.com/index/
+        rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" docs/.vitepress/dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/opt/1panel/apps/openresty/openresty/www/sites/remember11.com/index/
