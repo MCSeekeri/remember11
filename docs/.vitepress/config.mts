@@ -4,7 +4,24 @@ export default defineConfig({
   title: "Remember11 中文专题站",
   description: "一站式的《Remember11》体验导航",
   lang: "zh-CN",
-  head: [["link", { rel: "icon", href: "/images/icon.ico" }]],
+  head: [
+    ["link", { rel: "icon", href: "/images/icon.ico" }],
+    [
+      "noscript",
+      {},
+      `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGPK66PF"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+    ],
+    [
+      "script",
+      {},
+      `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PGPK66PF');`
+    ]
+  ],
   cleanUrls: true,
   sitemap: {
     hostname: "https://remember11.com",
