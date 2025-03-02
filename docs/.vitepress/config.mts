@@ -48,7 +48,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "剧情解析",
+        text: "剧情解析（剧透）",
         items: [
           { text: "概述", link: "/posts/概述" },
           {
