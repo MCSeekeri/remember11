@@ -39,7 +39,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "流程指南",
+        text: "游玩指南",
         items: [
           { text: "概述", link: "/guide/概述" },
           { text: "通关游戏本体", link: "/guide/通关游戏本体" },
@@ -159,7 +159,6 @@ export default defineConfig({
           { text: "游戏设定集", link: "/resource/游戏设定集" },
         ],
       },
-      { text: "更新日志及留言板", link: "/keyboardWar/更新日志及留言板" },
       { text: "回到旧版", link: "https://legacy.remember11.com/" },
     ],
 
@@ -176,7 +175,7 @@ export default defineConfig({
       ],
       "/guide/": [
         {
-          text: "流程指南",
+          text: "游玩指南",
           items: [
             { text: "概述", link: "/guide/概述" },
             { text: "通关游戏本体", link: "/guide/通关游戏本体" },
