@@ -109,12 +109,13 @@ document.body.addEventListener("click", (event) => {
 }
 
 .spoiler {
-  background-color: black;
-  color: black;
+  background-color: var(--vp-c-text-1);
+  color: var(--vp-c-text-1);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
   border: 1px solid transparent;
   outline: none;
+  filter: brightness(0.8);
 }
 
 .spoiler.revealed {
