@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import markdownItSpoiler from '@traptitech/markdown-it-spoiler';
 
 export default defineConfig({
   title: "Remember11 中文专题站",
@@ -25,6 +26,12 @@ export default defineConfig({
   cleanUrls: true,
   sitemap: {
     hostname: "https://remember11.com",
+  },
+
+  markdown: {
+    config: (md) => {
+      md.use(markdownItSpoiler);
+    }
   },
 
   themeConfig: {
