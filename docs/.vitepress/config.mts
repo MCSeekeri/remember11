@@ -47,68 +47,7 @@ export default defineConfig({
           { text: "结束", link: "/guide/结束" },
         ],
       },
-      {
-        text: "剧情解析（剧透）",
-        items: [
-          { text: "概述", link: "/posts/概述" },
-          {
-            text: "转移现象",
-            items: [
-              {
-                text: "第三人格和第三地点",
-                link: "/posts/转移现象/第三人格和第三地点",
-              },
-              {
-                text: "犬伏景子和凉荫穗鸟",
-                link: "/posts/转移现象/犬伏景子和凉荫穗鸟",
-              },
-              {
-                text: "阿尔法和欧米茄",
-                link: "/posts/转移现象/阿尔法和欧米茄",
-              },
-              {
-                text: "7日之中交错的轨迹",
-                link: "/posts/转移现象/7日之中交错的轨迹",
-              },
-            ],
-          },
-          {
-            text: "隐藏故事",
-            items: [
-              {
-                text: "悟，榎本，以及“我”",
-                link: "/posts/隐藏故事/悟，榎本，以及“我”",
-              },
-              { text: "Self在哪里", link: "/posts/隐藏故事/Self在哪里" },
-              { text: "优希堂沙也香", link: "/posts/隐藏故事/优希堂沙也香" },
-              { text: "优希堂计划", link: "/posts/隐藏故事/优希堂计划" },
-            ],
-          },
-          {
-            text: "未完篇章",
-            items: [
-              {
-                text: "Self的心理学隐喻",
-                link: "/posts/未完篇章/Self的心理学隐喻",
-              },
-              { text: "丢失的Self篇", link: "/posts/未完篇章/丢失的Self篇" },
-            ],
-          },
-          {
-            text: "其他细节",
-            items: [
-              {
-                text: "钟楼上的影子与Self不存在论",
-                link: "/posts/其他细节/钟楼上的影子与Self不存在论",
-              },
-              { text: "悠尼计划", link: "/posts/其他细节/悠尼计划" },
-              { text: "内海计划", link: "/posts/其他细节/内海计划" },
-              { text: "其他琐碎问题", link: "/posts/其他细节/其他琐碎问题" },
-            ],
-          },
-          { text: "结语", link: "/posts/结语" },
-        ],
-      },
+      { text: "剧情解析（剧透）", link: "/posts/概述" },
       {
         text: "游戏资料",
         items: [
