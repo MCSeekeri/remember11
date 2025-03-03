@@ -40,6 +40,13 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     }
   );
 });
+
+document.body.addEventListener("click", (event) => {
+  const spoiler = (event.target as HTMLElement).closest(".spoiler");
+  if (spoiler) {
+    spoiler.classList.toggle("revealed");
+  }
+});
 </script>
 
 <template>
@@ -99,5 +106,19 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
   gap: 8px;
   font-size: 14px;
   padding: 16px;
+}
+
+.spoiler {
+  background-color: black;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.spoiler.revealed {
+  background-color: transparent;
+  color: inherit;
 }
 </style>
