@@ -41,23 +41,25 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
   );
 });
 
-document.body.addEventListener("click", (event) => {
-  const spoiler = (event.target as HTMLElement).closest(".spoiler");
-  if (spoiler) {
-    spoiler.classList.toggle("revealed");
-  }
-});
+const handleClick = (event: Event) => {
+    const spoiler = (event.target as HTMLElement).closest('.spoiler');
+      if (spoiler) {
+        spoiler.classList.toggle('revealed');
+    }
+}
 </script>
 
 <template>
-  <Layout>
+  <Layout @click="handleClick">
     <template #doc-after>
-      <div class="danger custom-block" style="margin: 16px 0; padding: 16px">
-        <p style="font-size: 16px; text-align: center">
-          ❗评论区可能含有剧透内容，请通关后再查看。
-        </p>
+      <div>
+        <div class="danger custom-block" style="margin: 16px 0; padding: 16px">
+          <p style="font-size: 16px; text-align: center">
+            ❗评论区可能含有剧透内容，请通关后再查看。
+          </p>
+        </div>
+        <Waline />
       </div>
-      <Waline />
     </template>
     <template #layout-bottom>
       <div class="footer">
