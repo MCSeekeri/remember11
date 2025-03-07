@@ -105,7 +105,6 @@ export default defineConfig({
           { text: "游戏设定集", link: "/resource/游戏设定集" },
         ],
       },
-      { text: "回到旧版", link: "https://legacy.remember11.com/" },
     ],
 
     sidebar: {
