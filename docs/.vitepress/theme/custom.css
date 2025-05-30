@@ -1,0 +1,39 @@
+/* 全局背景 */
+body {
+  position: relative;
+  z-index: 0;
+  background: none !important; /* 避免和 ::before 重叠 */
+}
+
+/* 伪元素创建一个模糊背景图层 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../public/images/BG_A10AR-4.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: blur(5px); /* 模糊 */
+  opacity: 0.9;
+  z-index: -1;
+  pointer-events: none;
+}
+/* 黑夜背景*/
+html.dark body::before {
+  /* 使用线性渐变叠加一层色调 */
+  background-image: linear-gradient(
+      rgba(27, 27, 31, 0.6),
+      rgba(27, 27, 31, 0.6)
+    ),
+    url("../../public/images/BG_A10NR.webp");
+  filter: blur(6px) brightness(0.7);
+  background-blend-mode: overlay;
+}
+.VPNavBarAppearance {
+  margin-right: 16px;
+}

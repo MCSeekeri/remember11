@@ -1,6 +1,7 @@
 import Layout from "./Layout.vue";
 import type { Theme } from "vitepress";
-import "./custom.css";
+// 自定义css，用于增加背景
+// import "./custom.css";
 
 export default {
   Layout,

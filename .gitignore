@@ -1,6 +1,6 @@
 docs/.vitepress/cache
 docs/.vitepress/dist
-.vitepress/
+# .vitepress/
 dist
 node_modules
 yarn.lock
