@@ -2,12 +2,48 @@
 import DefaultTheme from "vitepress/theme";
 import { useData } from "vitepress";
 import Waline from "./Waline.vue";
-import { nextTick, provide } from "vue";
+import { nextTick, provide, onMounted, watch } from "vue";
+import { useRouter } from "vitepress";
 
 const { Layout } = DefaultTheme;
 
 const { isDark } = useData();
 
+const router = useRouter();
+
+function applyGrayscaleFilter() {
+  const today = new Date();
+  const targetDates = [
+    new Date(today.getFullYear(), 5, 4),
+    new Date(today.getFullYear(), 6, 7),
+    new Date(today.getFullYear(), 8, 18),
+    new Date(today.getFullYear(), 11, 13),
+  ];
+
+  const isTargetDate = targetDates.some(
+    (date) =>
+      date.getMonth() === today.getMonth() &&
+      date.getDate() === today.getDate(),
+  );
+
+  const htmlEl = document.documentElement;
+  if (isTargetDate) {
+    htmlEl.classList.add("grayscale-mode");
+  } else {
+    htmlEl.classList.remove("grayscale-mode");
+  }
+}
+
+onMounted(() => {
+  applyGrayscaleFilter();
+});
+
+watch(
+  () => router.route.path,
+  () => {
+    setTimeout(applyGrayscaleFilter, 100);
+  },
+);
 const enableTransitions = () =>
   "startViewTransition" in document &&
   window.matchMedia("(prefers-reduced-motion: no-preference)").matches;

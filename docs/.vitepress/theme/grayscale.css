@@ -1,0 +1,12 @@
+html.grayscale-mode {
+  filter: grayscale(100%) !important;
+  -webkit-filter: grayscale(100%) !important;
+}
+html.grayscale-mode body::before {
+  filter: blur(5px) grayscale(100%) !important;
+  -webkit-filter: blur(5px) grayscale(100%) !important;
+}
+html.dark.grayscale-mode body::before {
+  filter: blur(6px) brightness(0.7) grayscale(100%) !important;
+  -webkit-filter: blur(6px) brightness(0.7) grayscale(100%) !important;
+}
