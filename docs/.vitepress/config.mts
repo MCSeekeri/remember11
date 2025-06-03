@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import markdownItSpoiler from '@traptitech/markdown-it-spoiler';
+import markdownItSpoiler from "@traptitech/markdown-it-spoiler";
 
 export default defineConfig({
   title: "Remember11 中文专题站",
@@ -20,8 +20,8 @@ export default defineConfig({
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-PGPK66PF');`
-    ]
+      })(window,document,'script','dataLayer','GTM-PGPK66PF');`,
+    ],
   ],
   cleanUrls: true,
   sitemap: {
@@ -31,7 +31,7 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(markdownItSpoiler);
-    }
+    },
   },
 
   themeConfig: {

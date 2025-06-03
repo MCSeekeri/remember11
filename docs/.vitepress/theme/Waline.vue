@@ -22,7 +22,7 @@ const serverURL = "https://r11.comments.mcseekeri.com";
 const dark = "html.dark";
 const turnstileKey = "0x4AAAAAAAgSnJC0FwcTFI6c";
 const route = useRoute();
-const emoji = ['//gcore.jsdelivr.net/gh/MCSeekeri/r11-emojis@v1.0.1/'];
+const emoji = ["//gcore.jsdelivr.net/gh/MCSeekeri/r11-emojis@v1.0.1/"];
 
 const path = computed(() => route.path.replace(/\/$/, "") || "/");
 </script>
