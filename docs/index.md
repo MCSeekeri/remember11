@@ -11,9 +11,6 @@ hero:
     - theme: brand
       text: "开始"
       link: /begin/概述
-    - theme: alt
-      text: "返回旧版"
-      link: https://legacy.remember11.com
 
 features:
   - icon: 🎉
