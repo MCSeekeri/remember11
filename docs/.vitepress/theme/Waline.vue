@@ -8,6 +8,7 @@
       :turnstileKey="turnstileKey"
       :imageUploader="false"
       :emoji="emoji"
+      :locale="locale"
     />
   </ClientOnly>
 </template>
@@ -23,6 +24,7 @@ const dark = "html.dark";
 const turnstileKey = "0x4AAAAAAAgSnJC0FwcTFI6c";
 const route = useRoute();
 const emoji = ["//gcore.jsdelivr.net/gh/MCSeekeri/r11-emojis@v1.0.1/"];
+const locale = { admin: "站长" };
 
 const path = computed(() => route.path.replace(/\/$/, "") || "/");
 </script>
