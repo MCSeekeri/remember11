@@ -5,9 +5,9 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@waline/client": "3.4.1",
-    "vitepress": "^1.6.3",
-    "vue-router": "^4.5.0",
+    "@waline/client": "3.6.0",
+    "vitepress": "^1.6.4",
+    "vue-router": "^4.5.1",
     "@traptitech/markdown-it-spoiler": "^1.1.6"
   }
 }
