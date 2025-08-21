@@ -3,8 +3,9 @@ name: Deploy VitePress to Server
 on:
   push:
     branches:
-      - main
+    - main
   workflow_dispatch:
+
 
 jobs:
   deploy:
@@ -43,4 +44,4 @@ jobs:
     - name: Deploy to Server
       run: |
         npm run docs:build
-        rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" docs/.vitepress/dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/opt/1panel/apps/openresty/openresty/www/sites/remember11.com/index/
+        rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" docs/.vitepress/dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/opt/1panel/www/sites/remember11.com/index/
