@@ -22,8 +22,7 @@ function applyGrayscaleFilter() {
 
   const isTargetDate = targetDates.some(
     (date) =>
-      date.getMonth() === today.getMonth() &&
-      date.getDate() === today.getDate(),
+      date.getMonth() === today.getMonth() && date.getDate() === today.getDate()
   );
 
   const htmlEl = document.documentElement;
@@ -36,14 +35,36 @@ function applyGrayscaleFilter() {
 
 onMounted(() => {
   applyGrayscaleFilter();
+  const fixAriaControls = () => {
+    const hamburger = document.querySelector(".VPNavBarHamburger");
+    if (hamburger && hamburger.hasAttribute("aria-controls")) {
+      const controlId = hamburger.getAttribute("aria-controls");
+      const targetElement = document.getElementById(controlId);
+      if (!targetElement) {
+        hamburger.removeAttribute("aria-controls");
+      }
+    }
+  };
+  setTimeout(fixAriaControls, 100);
 });
 
 watch(
   () => router.route.path,
   () => {
     setTimeout(applyGrayscaleFilter, 100);
-  },
+    setTimeout(() => {
+      const hamburger = document.querySelector(".VPNavBarHamburger");
+      if (hamburger && hamburger.hasAttribute("aria-controls")) {
+        const controlId = hamburger.getAttribute("aria-controls");
+        const targetElement = document.getElementById(controlId);
+        if (!targetElement) {
+          hamburger.removeAttribute("aria-controls");
+        }
+      }
+    }, 100);
+  }
 );
+
 const enableTransitions = () =>
   "startViewTransition" in document &&
   window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
@@ -58,7 +79,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     `circle(0px at ${x}px ${y}px)`,
     `circle(${Math.hypot(
       Math.max(x, innerWidth - x),
-      Math.max(y, innerHeight - y),
+      Math.max(y, innerHeight - y)
     )}px at ${x}px ${y}px)`,
   ];
 
@@ -73,7 +94,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
       duration: 300,
       easing: "ease-in",
       pseudoElement: `::view-transition-${isDark.value ? "old" : "new"}(root)`,
-    },
+    }
   );
 });
 
@@ -86,6 +107,17 @@ const handleClick = (event: Event) => {
 </script>
 
 <template>
+  <div class="gtm-noscript-container">
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PGPK66PF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      >
+      </iframe>
+    </noscript>
+  </div>
   <Layout @click="handleClick">
     <template #doc-after>
       <div>
@@ -161,5 +193,12 @@ const handleClick = (event: Event) => {
 .spoiler.revealed {
   background-color: transparent;
   color: inherit;
+}
+
+.gtm-noscript-container {
+  display: block;
+}
+
+div[class*="data-v-"] {
 }
 </style>

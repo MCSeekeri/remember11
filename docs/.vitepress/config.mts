@@ -8,12 +8,6 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/images/icon.ico" }],
     [
-      "noscript",
-      {},
-      `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGPK66PF"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-    ],
-    [
       "script",
       {},
       `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
