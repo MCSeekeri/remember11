@@ -4,20 +4,35 @@
 
 目前，仅有子安武人（优希堂悟）、森永理科（冬川心）、皆川纯子（楠田悠尼）的部分得到了翻译。
 
-## 子安武人（优希堂悟）
-
-![p1](/images/coverSatoru.webp)
-[bilibili](https://www.bilibili.com/video/BV1eV411J7je/)
-
 ## 森永理科（冬川心）
 
-![p2](/images/coverKokoro.webp)
+![p1](/images/coverKokoro.webp)
 [bilibili](https://www.bilibili.com/video/BV1Do4y1275c/)
+
+## 子安武人（优希堂悟）
+
+![p2](/images/coverSatoru.webp)
+[bilibili](https://www.bilibili.com/video/BV1eV411J7je/)
+
+## 丰口惠美（黛铃）
+
+![p3](/images/coverDai.webp)
+[bilibili](https://www.bilibili.com/video/BV1GQrHBpEaB/)
 
 ## 皆川纯子（楠田悠尼）
 
-![p3](/images/coverUni.webp)
+![p4](/images/coverUni.webp)
 [bilibili](https://www.bilibili.com/video/BV1YB4y1F7uJ/)
+
+## 友永朱音（犬伏景子）
+
+![p5](/images/coverQuanfu.webp)
+[bilibili](https://www.bilibili.com/video/BV1KtrZByEJr/)
+
+## 久川绫（内海卡莉）
+
+![p6](/images/coverNeihai.webp)
+[bilibili](https://www.bilibili.com/video/BV1JRkPBnEjB/)
 
 # 音频下载
 
