@@ -4,10 +4,10 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "packageManager": "pnpm@11.15.0",
+  "packageManager": "pnpm@12.21.0",
   "devDependencies": {
-    "@waline/client": "3.15.2",
-    "vitepress": "^1.6.4",
-    "@traptitech/markdown-it-spoiler": "^1.1.6"
+    "@traptitech/markdown-it-spoiler": "^1.1.6",
+    "@waline/client": "^3.16.2",
+    "vitepress": "^1.6.4"
   }
 }
